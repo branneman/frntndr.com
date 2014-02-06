@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+body > .wrapper {
+    max-width: 45em;
+    margin: 75px auto 0;
+    padding: 0 20px;
+
+    font-family: Lato, Arial, serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/**
+ * Typography
+ */
+h1, h2, h3 {
+    font-family: Lato, Arial, serif;
+    font-weight: 300;
+}
+strong {
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+a:hover,
+a:focus {
+    color: mediumblue;
+}
+
+/**
+ * Content
+ */
+main {
+    padding-top: 20px;
+    border-top: 1px solid lightgrey;
+}
+
+/**
+ * Footer
+ */
+footer {
+    margin-top: 100px;
+    padding-top: 20px;
+    border-top: 1px solid lightgrey;
+}
