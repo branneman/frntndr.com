@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}frntndr{% endblock %}</title>
+    <script> if (window.location.hostname === 'branneman.github.io') window.location = 'http://frntndr.com/'; </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ baseUrl }}static/css/all.css?{{ __uptime }}">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,300italic,700">
+</head>
+<body>
+    <div class="wrapper">
+        {% include '../modules/header.html' %}
+        {%- block body %}{% endblock -%}
+        {% include '../modules/footer.html' %}
+    </div>
+</body>
+</html>

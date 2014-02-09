@@ -1,0 +1,17 @@
+$gutter: 2rem;
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+
+    & > .wrapper {
+        max-width: 40em;
+        margin: $gutter auto 0;
+        padding: 0 $gutter;
+    }
+}
+
+main {
+    border-top: .1rem solid lightgrey;
+}

@@ -1,0 +1,9 @@
+{% extends 'layout/default.html' %}
+{% block title %}404 Not Found{% endblock %}
+
+{% block body %}
+    <main>
+        <h2>404 Not Found</h2>
+        <p><a href="{{ baseUrl || '/' }}">Navigate to homepage</a></p>
+    </main>
+{% endblock %}
