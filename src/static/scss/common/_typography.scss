@@ -47,6 +47,21 @@ a:focus {
 ol > li,
 ul > li {
     height: 3rem;
+
+}
+ul > li {
+    position: relative;
+    list-style: none;
+
+    &::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        padding-right: 1rem;
+        text-align: right;
+        content: '\2013';
+    }
 }
 
 //
