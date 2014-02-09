@@ -1,0 +1,25 @@
+{% extends '../layout/default.html' %}
+
+{% block body %}
+    <main>
+        <h1>Documentation</h1>
+
+        <h2>Getting started</h2>
+        <p>If you are completely new to frntndr, you'd best get started with the
+            <a href="{{ baseUrl }}docs/guide/installation.html">Installation</a>, and then the
+            <a class="docs-section walkthrough" href="{{ baseUrl }}docs/walkthrough.html">Walkthrough</a>.</p>
+
+        <h2>Guide</h2>
+        <ul>
+            <li><a href="{{ baseUrl }}docs/guide/installation.html">Installation</a> (coming soon)</li>
+            <li><a href="{{ baseUrl }}docs/guide/workflow.html">Workflow</a> (coming soon)</li>
+            <li><a href="{{ baseUrl }}docs/guide/tools-best-practices.html">Tools and best-practices</a> (coming soon)</li>
+        </ul>
+
+        <h2>How to</h2>
+        <ul>
+            <li><a href="{{ baseUrl }}docs/guide/how-to-include-requirejs.html">How to include Require.js</a> (coming soon)</li>
+            <li><a href="{{ baseUrl }}docs/guide/how-to-include-twitter-bootstrap.html">How to include Twitter Bootstrap</a> (coming soon)</li>
+        </ul>
+    </main>
+{% endblock %}
