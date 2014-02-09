@@ -5,13 +5,19 @@ body {
     padding: 0;
     overflow-y: scroll;
 
-    & > .wrapper {
+    > .wrapper {
         max-width: 40em;
-        margin: $gutter auto 0;
+        margin: ($gutter / 2) auto 0;
         padding: 0 $gutter;
     }
 }
 
 main {
     border-top: .1rem solid lightgrey;
+}
+
+@media all and (min-width: 45em) {
+    body > .wrapper {
+        margin-top: $gutter;
+    }
 }
