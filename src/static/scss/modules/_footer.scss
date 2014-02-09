@@ -2,4 +2,35 @@
     margin: $gutter 0;
     padding-top: $gutter;
     border-top: .1rem solid color('border');
+
+    ol {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+@media all and (min-width: 30em) {
+
+    .site-footer ol li {
+
+        display: inline;
+        margin-left: .8rem;
+
+        &:first-child {
+            margin-left: 0;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        &::before {
+            content: '\2013';
+            margin-right: 1.5rem;
+        }
+    }
 }

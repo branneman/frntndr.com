@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ baseUrl }}static/css/all.css?{{ __uptime }}">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,300italic,700">
+    {% include '../includes/favicon.html' %}
 </head>
 <body>
     <div class="wrapper">
         {% include '../modules/header.html' %}
         {%- block body %}{% endblock -%}
-        {% include '../modules/footer.html' %}
+        {%- block footer %}
+            {% include '../modules/footer.html' %}
+        {% endblock -%}
     </div>
 </body>
 </html>
