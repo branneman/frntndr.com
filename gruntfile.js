@@ -167,7 +167,6 @@ module.exports = function Gruntfile(grunt) {
                         '!**/layout/**',
                         '!**/includes/**',
                         '!**/modules/**',
-                        '!**/docs/**',
                         '!**/js/**/_*.js',
                         '!**/js/spec/**'
                     ],
