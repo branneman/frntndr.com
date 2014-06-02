@@ -5,7 +5,7 @@
     <title>frntndr</title>
     <script> if (window.location.hostname === 'branneman.github.io') window.location = 'http://frntndr.com/'; </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../static/css/all.css?1401029932780">
+    <link rel="stylesheet" href="../../static/css/all.css?1401717694727">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,300italic,700">
     <link href="../../static/img/icon/favicon-152x152.png" rel="apple-touch-icon-precomposed" sizes="152x152">
 <link href="../../static/img/icon/favicon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
@@ -45,23 +45,17 @@
         <p>If you are not going to use Node.js for anything else right now, directly downloading and installing from the
             <a href="http://nodejs.org/">Node.js</a> site will do fine. Updating Node is just more of a drag then.</p>
 
-        <h3>1.2. Ruby &amp; Sass</h3>
-        <p>Since the best implementation of Sass is in Ruby at the time of writing, you'll need that. Once the C
-            implementation has better compatibility with the Ruby implementation, we'll switch over to the much faster
-            <a href="https://github.com/hcatlin/libsass">libsass</a>. You can track the progress
-            <a href="https://github.com/branneman/frntndr/issues/3">here</a>.</p>
+        <h3>1.2. Ruby</h3>
         <p>Ruby is bundled with OSX, so you won't have to install that manually. Windows users have to download Ruby
             from <a href="http://rubyinstaller.org/">RubyInstaller</a>.</p>
-        <p>Once you've got Ruby up and running, install Sass with this command:</p>
-        <code class="block">gem install sass</code>
-        <p>If you get an error while installing Sass, you might have a version of Ruby which doesn't play nice with
-            Sass. Try 1.9 or 2, 64bit should be fine.</p>
+        <p>Once you've got Ruby up and running, install <a href="http://bundler.io/">Bundler</a> with this command:</p>
+        <code class="block">gem install bundler</code>
 
         <h2>2. Install frntndr via npm</h2>
         <p>All you have to do is run this:</p>
-        <code class="block">npm i -g frntndr grunt-cli bower</code>
+        <code class="block">npm i -g grunt-cli bower frntndr</code>
         <p>From now on, you can create new projects with the <code>frntndr</code> command-line tool. If you are new to
-            frntndr, you could start with the <a href="/docs/walkthrough.html">Walkthrough</a>.</p>
+            frntndr, you should start with the <a href="/docs/walkthrough.html">Walkthrough</a>.</p>
     </main>
 
             <footer class="site-footer">
